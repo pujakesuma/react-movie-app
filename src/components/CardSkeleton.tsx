@@ -8,7 +8,7 @@ const CardSkeleton = ({ cardToRender }: Props) => {
       {Array(cardToRender)
         .fill(1)
         .map((v, i) => (
-          <div key={i} className="my-1 px-1 w-1/3 lg:my-4 lg:px-4 md:w-1/5">
+          <div key={`${v}${i}`} className="my-1 px-1 w-1/3 lg:my-4 lg:px-4 md:w-1/5">
             <div className="block rounded-lg" >
               <div className="h-36 md:h-64 animate-pulse bg-gray-400 w-full object-cover object-center rounded-t-lg"></div>
               <div className="py-5">
